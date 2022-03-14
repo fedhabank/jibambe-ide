@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd" name="helion-platform"
+    xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <fileSets>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>README.txt</include>
+      </includes>
+    </fileSet>
+    <fileSet encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>docker-compose.yml</include>
+        <include>Dockerfile</include>
+        <include>.gitignore</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+  <modules>
+    <module id="${rootArtifactId}-ejb" dir="__rootArtifactId__-ejb" name="${rootArtifactId}-ejb">
+      <fileSets>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/resources</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/test/resources</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-web" dir="__rootArtifactId__-web" name="${rootArtifactId}-web">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/webapp</directory>
+          <includes>
+            <include>**/*.txt</include>
+            <include>**/*.xml</include>
+            <include>**/*.html</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src/main/webapp</directory>
+          <includes>
+            <include>**/*.</include>
+            <include>**/*.css</include>
+            <include>**/*.pegjs</include>
+            <include>**/*.npmignore</include>
+            <include>**/*.swf</include>
+            <include>**/*.def</include>
+            <include>**/*.bin</include>
+            <include>**/*.conf</include>
+            <include>**/*.bak</include>
+            <include>**/*.jscsrc</include>
+            <include>**/*.BSD</include>
+            <include>**/*.bar</include>
+            <include>**/*.wasm</include>
+            <include>**/*.opts</include>
+            <include>**/*.ico</include>
+            <include>**/*.md</include>
+            <include>**/*.tm_properties</include>
+            <include>**/*.editorconfig</include>
+            <include>**/*.lock</include>
+            <include>**/*.bnf</include>
+            <include>**/*.DOCS</include>
+            <include>**/*.nix</include>
+            <include>**/*.jshintrc</include>
+            <include>**/*.LICENSE</include>
+            <include>**/*.flow</include>
+            <include>**/*.yaml</include>
+            <include>**/*.mdown</include>
+            <include>**/*.babelrc</include>
+            <include>**/*.eslintrc</include>
+            <include>**/*.png</include>
+            <include>**/*.mts</include>
+            <include>**/*.1</include>
+            <include>**/*.gitkeep</include>
+            <include>**/*.eslintignore</include>
+            <include>**/*.closure-compiler</include>
+            <include>**/*.log</include>
+            <include>**/*.js</include>
+            <include>**/*.iml</include>
+            <include>**/*.jst</include>
+            <include>**/*.gitattributes</include>
+            <include>**/*.auto-changelog</include>
+            <include>**/*.wmf</include>
+            <include>**/*.nvmrc</include>
+            <include>**/*.lcl</include>
+            <include>**/*.browserslistrc</include>
+            <include>**/*.sh</include>
+            <include>**/*.applescript</include>
+            <include>**/*.tsx</include>
+            <include>**/*.markdown</include>
+            <include>**/*.json</include>
+            <include>**/*.yml</include>
+            <include>**/*.tsbuildinfo</include>
+            <include>**/*.map</include>
+            <include>**/*.jpg</include>
+            <include>**/*.svg</include>
+            <include>**/*.gitignore</include>
+            <include>**/*.cjs</include>
+            <include>**/*.nycrc</include>
+            <include>**/*.docx</include>
+            <include>**/*.ejs</include>
+            <include>**/*.jison</include>
+            <include>**/*.mjs</include>
+            <include>**/*.coffee</include>
+            <include>**/*.php</include>
+            <include>**/*.ts</include>
+            <include>**/*.esprima</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/test/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/test/resources</directory>
+          <includes>
+            <include>**/*.xml</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-web-admin" dir="__rootArtifactId__-web-admin" name="${rootArtifactId}-web-admin">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/webapp</directory>
+          <includes>
+            <include>**/*.txt</include>
+            <include>**/*.xml</include>
+            <include>**/*.html</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src/main/webapp</directory>
+          <includes>
+            <include>**/*.</include>
+            <include>**/*.css</include>
+            <include>**/*.bin</include>
+            <include>**/*.gitignore</include>
+            <include>**/*.png</include>
+            <include>**/*.js</include>
+            <include>**/*.gitattributes</include>
+            <include>**/*.cjs</include>
+            <include>**/*.ejs</include>
+            <include>**/*.BSD</include>
+            <include>**/*.wasm</include>
+            <include>**/*.md</include>
+            <include>**/*.mjs</include>
+            <include>**/*.json</include>
+            <include>**/*.editorconfig</include>
+            <include>**/*.yml</include>
+            <include>**/*.bnf</include>
+            <include>**/*.map</include>
+            <include>**/*.jshintrc</include>
+            <include>**/*.flow</include>
+            <include>**/*.ts</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-web-express" dir="__rootArtifactId__-web-express" name="${rootArtifactId}-web-express">
+      <fileSets>
+        <fileSet filtered="true" packaged="true" encoding="UTF-8">
+          <directory>src/main/java</directory>
+          <includes>
+            <include>**/*.java</include>
+          </includes>
+        </fileSet>
+        <fileSet filtered="true" encoding="UTF-8">
+          <directory>src/main/webapp</directory>
+          <includes>
+            <include>**/*.txt</include>
+            <include>**/*.xml</include>
+            <include>**/*.html</include>
+          </includes>
+        </fileSet>
+        <fileSet encoding="UTF-8">
+          <directory>src/main/webapp</directory>
+          <includes>
+            <include>**/*.</include>
+            <include>**/*.css</include>
+            <include>**/*.bin</include>
+            <include>**/*.gitignore</include>
+            <include>**/*.png</include>
+            <include>**/*.js</include>
+            <include>**/*.gitattributes</include>
+            <include>**/*.cjs</include>
+            <include>**/*.mts</include>
+            <include>**/*.ejs</include>
+            <include>**/*.BSD</include>
+            <include>**/*.wasm</include>
+            <include>**/*.md</include>
+            <include>**/*.mjs</include>
+            <include>**/*.json</include>
+            <include>**/*.editorconfig</include>
+            <include>**/*.yml</include>
+            <include>**/*.bnf</include>
+            <include>**/*.map</include>
+            <include>**/*.jshintrc</include>
+            <include>**/*.flow</include>
+            <include>**/*.ts</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+    <module id="${rootArtifactId}-ear" dir="__rootArtifactId__-ear" name="${rootArtifactId}-ear">
+      <fileSets>
+        <fileSet encoding="UTF-8">
+          <directory>docs</directory>
+          <includes>
+            <include>**/*.md</include>
+          </includes>
+        </fileSet>
+      </fileSets>
+    </module>
+  </modules>
+</archetype-descriptor>
